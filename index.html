@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Odd or Even</title>
+</head>
+<link rel=stylesheet href=style.css type=text/css>
+<style type="text/css">
+  h1{
+    font-size:60px;
+  }
+  body{
+    text-align: center;
+    background-color: rgb(212, 163, 115);
+    color: rgb(204, 213, 174); 
+  }
+  button{
+    background-color: rgb(250, 237, 205);
+    color: rgb(212, 163, 115);
+    font-size: 20px;
+    border: 1px solid white;
+  }
+  input{
+    background-color: rgb(250, 237, 205);
+    color: rgb(212, 163, 115);
+    font-size: 20px;  
+    border: 1px solid white;
+  }
+  div{
+    margin-top: 10px;
+    font-size:25px;
+  }
+</style>
+<body>
+  <h1>
+    Odd or Even
+  </h1>
+  <input placeholder="Enter your Number" type="Number" id="number">
+  <button onclick="js()">Check</button>
+  <div id="result">Here you will get your Answer</div>
+  <script type="javascript">
+    const N= document.getElementById(number).innerText
+   if(N%2 === 0){
+     document.getElementById(result).innerText= "yes"}
+  </script>
+</body>
+</html>
